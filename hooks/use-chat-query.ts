@@ -35,6 +35,7 @@ export const useChatQuery = ({
   };
 
   const { data, fetchNextPage, hasNextPage, isFetchingNextPage, status } =
+     //@ts-ignore
     useInfiniteQuery({
       queryKey: [queryKey],
       queryFn: fetchMessages,
